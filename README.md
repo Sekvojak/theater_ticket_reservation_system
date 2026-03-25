@@ -77,11 +77,7 @@ This repository contains the **deployed version with my contributions**, mainly 
 ---
 
 ## 🧱 Architecture
-React frontend
-↓
-Spring Boot REST API
-↓
-Database (PostgreSQL)
+React frontend --> Spring Boot REST API --> Database (PostgreSQL)
 
 
 ---
