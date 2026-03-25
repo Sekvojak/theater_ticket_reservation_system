@@ -2,7 +2,7 @@
 
 Web application for browsing theatre performances, creating reservations and managing shows.
 
-👉 Live version: *(sem daj link na deploy)*
+👉 Live version: https://www.klara-divadlo.site
 
 ---
 
@@ -104,6 +104,5 @@ React frontend --> Spring Boot REST API --> Database (PostgreSQL)
 **Dominik Kontrik**
 
 - GitHub: https://github.com/SEKVOJAK
-- LinkedIn: *(doplníš)*
 
 ---
