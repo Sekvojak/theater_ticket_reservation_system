@@ -78,8 +78,7 @@ export default function SeatMapPage() {
   }
 
   const subtotal = Array.from(selectedIds).reduce((sum, id) => sum + getSeatPrice(id), 0)
-  const fee = selectedIds.size > 0 ? 1 : 0
-  const total = subtotal + fee
+  const total = subtotal
 
   function toggleSeat(seatId: number) {
     setSelectedIds(prev => {
@@ -258,10 +257,6 @@ export default function SeatMapPage() {
                 <div className="price-row">
                   <span>{selectedIds.size}× sedadlo</span>
                   <span>{subtotal.toFixed(2)} €</span>
-                </div>
-                <div className="price-row">
-                  <span>Servisný poplatok</span>
-                  <span>{fee > 0 ? `${fee} €` : '–'}</span>
                 </div>
                 <div className="price-row total">
                   <span>Celkom</span>

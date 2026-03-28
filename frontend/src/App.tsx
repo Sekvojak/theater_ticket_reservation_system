@@ -5,6 +5,7 @@ import Nav from './components/Nav'
 import HomePage from './pages/HomePage'
 import ShowsPage from './pages/ShowsPage'
 import HowPage from './pages/HowPage'
+import AboutPage from './pages/AboutPage'
 import ShowDetailPage from './pages/ShowDetailPage'
 import SeatMapPage from './pages/SeatMapPage'
 import MyReservationsPage from './pages/MyReservationsPage'
@@ -18,6 +19,7 @@ import AdminStatsPage from './pages/admin/AdminStatsPage'
 import VerifyPage from './pages/VerifyPage'
 import PaymentSuccessPage from './pages/PaymentSuccessPage'
 import PaymentCancelPage from './pages/PaymentCancelPage'
+import PayRedirectPage from './pages/PayRedirectPage'
 
 function AdminRoute({ children }: { children: React.ReactNode }) {
   const { user } = useApp()
@@ -35,6 +37,7 @@ function AppRoutes() {
         <Route path="/shows/:showId" element={<ShowDetailPage />} />
         <Route path="/performances/:performanceId/seats" element={<SeatMapPage />} />
         <Route path="/how" element={<HowPage />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/my-reservations" element={<MyReservationsPage />} />
         <Route path="/account" element={<AccountPage />} />
 
@@ -48,6 +51,7 @@ function AppRoutes() {
         <Route path="/verify" element={<VerifyPage />} />
         <Route path="/payment/success" element={<PaymentSuccessPage />} />
         <Route path="/payment/cancel" element={<PaymentCancelPage />} />
+        <Route path="/pay/:reservationId" element={<PayRedirectPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </>

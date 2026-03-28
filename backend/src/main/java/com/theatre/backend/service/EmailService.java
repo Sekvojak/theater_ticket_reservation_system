@@ -91,7 +91,7 @@ public class EmailService {
             </p>
             """);
 
-        String ctaUrl = isPending ? frontendUrl + "/my-reservations" : null;
+        String ctaUrl = isPending ? frontendUrl + "/pay/" + reservation.getId() : null;
         String ctaLabel = isPending ? "Zaplatiť teraz" : null;
         String subject = isPending
             ? "Klára — Rezervácia #" + reservation.getId() + " čaká na platbu"

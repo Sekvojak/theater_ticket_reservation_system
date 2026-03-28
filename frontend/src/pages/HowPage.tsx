@@ -3,10 +3,6 @@ import { useNavigate } from 'react-router-dom'
 
 const FAQ_ITEMS = [
   {
-    q: 'Môžem rezervovať bez registrácie?',
-    a: 'Áno, základná rezervácia na meno nevyžaduje registráciu. Stačí zadať meno a e-mail pre potvrdenie.',
-  },
-  {
     q: 'Ako môžem zrušiť rezerváciu?',
     a: 'Prihlásený používateľ môže zrušiť rezerváciu v sekcii „Moje rezervácie". Zrušenie je možné do začiatku predstavenia.',
   },
@@ -32,8 +28,8 @@ export default function HowPage() {
         <span className="section-label">Návod</span>
         <h2 className="section-title">Ako to funguje?</h2>
         <p>
-          Rezervácia lístka trvá menej ako 2 minúty. Žiadna registrácia nie je potrebná pre základné
-          funkcie. Stačí vybrať predstavenie, sedadlo a potvrdiť.
+          Rezervácia lístka trvá menej ako 2 minúty. Pre rezerváciu je potrebné prihlásenie.
+          Stačí sa zaregistrovať, vybrať predstavenie, sedadlo a potvrdiť.
         </p>
       </div>
 

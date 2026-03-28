@@ -71,6 +71,7 @@ export default function Nav() {
           <li><a className={isActive('/') ? 'active' : ''} onClick={() => navigate('/')}>Domov</a></li>
           <li><a className={isActive('/shows') ? 'active' : ''} onClick={() => navigate('/shows')}>Predstavenia</a></li>
           <li><a className={isActive('/how') ? 'active' : ''} onClick={() => navigate('/how')}>Ako to funguje</a></li>
+          <li><a className={isActive('/about') ? 'active' : ''} onClick={() => navigate('/about')}>O nás</a></li>
         </ul>
 
         <div className="nav-right">
@@ -177,6 +178,7 @@ export default function Nav() {
           <a className={isActive('/') ? 'active' : ''} onClick={() => navTo('/')}>Domov</a>
           <a className={isActive('/shows') ? 'active' : ''} onClick={() => navTo('/shows')}>Predstavenia</a>
           <a className={isActive('/how') ? 'active' : ''} onClick={() => navTo('/how')}>Ako to funguje</a>
+          <a className={isActive('/about') ? 'active' : ''} onClick={() => navTo('/about')}>O nás</a>
           {user && (
             <>
               <div className="mobile-nav-divider" />
